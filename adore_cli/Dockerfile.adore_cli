@@ -2,8 +2,8 @@ ARG ADORE_CLI_CORE_IMAGE=adore_cli_core:latest
 FROM ${ADORE_CLI_CORE_IMAGE} AS adore_cli
 
 # Build arguments
-ARG ROS_DISTRO=jazzy
-ARG OS_CODE_NAME=noble
+ARG ROS_DISTRO=iron
+ARG OS_CODE_NAME=jammy
 ARG BRANCH=main
 ARG SHORT_HASH=latest
 ARG PARENT_BRANCH=main

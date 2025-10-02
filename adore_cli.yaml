@@ -38,8 +38,8 @@ x-common-build-args: &common-build-args
   USER: ${USER}
   UID: ${UID:-1000}
   GID: ${GID:-1001}
-  ROS_DISTRO: ${ROS_DISTRO:-jazzy}
-  OS_CODE_NAME: ${OS_CODE_NAME:-noble}
+  ROS_DISTRO: ${ROS_DISTRO:-iron}
+  OS_CODE_NAME: ${OS_CODE_NAME:-jammy}
   BRANCH: ${ADORE_CLI_BRANCH}
   SHORT_HASH: ${ADORE_CLI_SHORT_HASH}
   PARENT_BRANCH: ${PARENT_BRANCH}
@@ -61,7 +61,7 @@ services:
     # === ENVIRONMENT VARIABLES ===
     environment:
       <<: *common-environment
-      ROS_DISTRO: ${ROS_DISTRO:-jazzy}
+      ROS_DISTRO: ${ROS_DISTRO:-iron}
       SOURCE_DIRECTORY: ${SOURCE_DIRECTORY}
       ADORE_CLI_WORKING_DIRECTORY: ${ADORE_CLI_WORKING_DIRECTORY}
       TEST_SCENARIOS: ${TEST_SCENARIOS:-baseline_test.launch}

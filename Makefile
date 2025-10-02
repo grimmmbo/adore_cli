@@ -16,8 +16,8 @@ DOCKER_BUILDKIT?=1
 COMPOSE_BAKE?=true
 
 # === ROS CONFIGURATION ===
-ROS_DISTRO:=jazzy
-OS_CODE_NAME:=noble
+ROS_DISTRO:=iron
+OS_CODE_NAME:=jammy
 
 USER_UID:=$(shell id -u)
 USER_GID:=$(shell id -g)

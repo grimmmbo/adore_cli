@@ -13,7 +13,7 @@ ROOT_DIR := $(shell dirname "$(realpath $(firstword $(MAKEFILE_LIST)))")
 DOCKER_BUILDKIT?= 1
 DOCKER_CONFIG?=
 SUBMODULES_PATH?=$(shell realpath "${ROOT_DIR}/..")
-ROS_DISTRO?=jazzy
+ROS_DISTRO?=iron
 
 # Determine source and log directories
 ifneq ($(SOURCE_DIRECTORY),)

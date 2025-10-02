@@ -1,7 +1,7 @@
 # === BUILD ARGUMENTS ===
 # These must be declared before FROM to be available in base image selection
-ARG ROS_DISTRO=jazzy
-ARG OS_CODE_NAME=noble
+ARG ROS_DISTRO=iron
+ARG OS_CODE_NAME=jammy
 
 # === ADORE CLI BASE LAYER ===
 # Base ROS2 layer and tool foundation - completely user-agnostic

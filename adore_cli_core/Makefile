@@ -11,7 +11,7 @@ ROOT_DIR := $(shell dirname "$(realpath $(firstword $(MAKEFILE_LIST)))")
 .EXPORT_ALL_VARIABLES:
 DOCKER_BUILDKIT?= 1
 DOCKER_CONFIG?=
-ROS_DISTRO?=jazzy
+ROS_DISTRO?=iron
 
 # Use SOURCE_DIRECTORY if provided, otherwise default to parent of adore_cli
 SOURCE_DIRECTORY?=$(shell realpath "${ROOT_DIR}/../..")
