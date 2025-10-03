@@ -110,7 +110,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
         cat combined_requirements.pip3 && \
         PACKAGES=$(cat combined_requirements.pip3 | tr '\n' ' ' | sed 's/  */ /g' | sed 's/^ *//;s/ *$//') && \
         if [ ! -z "$PACKAGES" ]; then \
-            timeout 600 python3 -m pip install --ignore-installed --break-system-packages $PACKAGES && \
+            timeout 600 python3 -m pip install --ignore-installed $PACKAGES && \
             cp combined_requirements.pip3 pip_install.success; \
         fi; \
     fi

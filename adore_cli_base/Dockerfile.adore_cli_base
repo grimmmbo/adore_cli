@@ -61,7 +61,7 @@ COPY files/${PYTHON_REQUIREMENTS_FILE} /tmp
 # Process Python requirements with variable substitution
 RUN --mount=type=cache,target=/root/.cache/pip \
     (envsubst < ${PYTHON_REQUIREMENTS_FILE} | sed '/^#/d' | sed '/^$/d' | \
-    xargs -r timeout 300 python3 -m pip install --break-system-packages) || \
+    xargs -r timeout 300 python3 -m pip install ) || \
     (echo "Warning: Some pip packages may not have been installed due to network issues" && true)
 
 # === X11 AND DISPLAY PACKAGES ===
